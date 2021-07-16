@@ -1,5 +1,7 @@
 //Знайти всі числа-паліндроми, менші за 100, які при піднесенні до квадрату теж паліндроми
 
+
+function checkPalindrome (n) {
 function isPalindrome (number) {
     let reverse = Number(number.toString().split('').reverse().join(''));
     let square = number * number;
@@ -7,10 +9,11 @@ function isPalindrome (number) {
     return (number===reverse && square===squareReverse);
 }
 let all = [];
-let e;
-for (e = 0; e < 100; e++);
-isPalindrome(e);
-if (e) {
-    all.push (e);
+let i;
+for (i = 0; i < n; i++);
+isPalindrome(i);
+if (i) {
+    all.push (i);
 }
-console.log(all);
+return all;
+}
